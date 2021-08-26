@@ -1,0 +1,20 @@
+.profile .logout-link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.profile .email-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.profile .email-info span {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+/*# sourceMappingURL=style.css.map */
