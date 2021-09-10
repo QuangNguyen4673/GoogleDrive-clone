@@ -1,1 +1,10 @@
-@import "./components/profile";
+@use "./components/profile";
+@use "./components/my-navbar";
+@use "./components/my-dashboard";
+@use "./components/bs-toast";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

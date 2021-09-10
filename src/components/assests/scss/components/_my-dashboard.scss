@@ -1,0 +1,27 @@
+.my-dashboard {
+  .main-dashboard {
+    display: flex;
+    flex-direction: column;
+    > * {
+      margin-bottom: 0.5rem;
+    }
+  }
+  .path-and-addbtns {
+    display: flex;
+    justify-content: space-between;
+  }
+  .folder-management {
+    margin-left: auto;
+    button {
+      margin-left: 1rem;
+    }
+  }
+  .user-belongings {
+    button {
+      margin-right: 1rem;
+      svg {
+        margin-right: 0.2rem;
+      }
+    }
+  }
+}

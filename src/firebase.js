@@ -1,7 +1,9 @@
 import firebase from "firebase/app";
 import "firebase/auth";
+import "firebase/firestore";
+import "firebase/storage";
 
-const app = firebase.initializeApp({
+firebase.initializeApp({
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
   projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
@@ -10,5 +12,16 @@ const app = firebase.initializeApp({
   appId: process.env.REACT_APP_FIREBASE_APP_ID,
 });
 
-export const auth = app.auth();
-export default app; // Để làm gì?
+const auth = firebase.auth();
+const firestore = firebase.firestore();
+const storage = firebase.storage();
+const database = {
+  folders: firestore.collection("folders"),
+  files: firestore.collection("files"),
+  formattedDoc: (doc) => {
+    return { id: doc.id, ...doc.data() };
+  },
+};
+const timeStamp = firebase.firestore.FieldValue.serverTimestamp;
+
+export { auth, database, storage, timeStamp };

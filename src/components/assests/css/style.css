@@ -1,0 +1,73 @@
+.profile .logout-link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.profile .email-info {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+.profile .email-info span {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.update-profile a.cancel {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.my-navbar {
+  margin-bottom: 1rem;
+}
+
+.my-dashboard .main-dashboard {
+  display: flex;
+  flex-direction: column;
+}
+.my-dashboard .main-dashboard > * {
+  margin-bottom: 0.5rem;
+}
+.my-dashboard .path-and-addbtns {
+  display: flex;
+  justify-content: space-between;
+}
+.my-dashboard .folder-management {
+  margin-left: auto;
+}
+.my-dashboard .folder-management button {
+  margin-left: 1rem;
+}
+.my-dashboard .user-belongings button {
+  margin-right: 1rem;
+}
+.my-dashboard .user-belongings button svg {
+  margin-right: 0.2rem;
+}
+
+.bs-toast .toast-header {
+  align-items: center;
+}
+.bs-toast .toast-header button {
+  margin-top: 0.1rem;
+  margin-left: 0.5rem;
+  padding: 0.5em;
+  border-width: 0;
+  background: transparent url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3E%3Cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3E%3C/svg%3E") center/0.8em auto no-repeat;
+}
+.bs-toast .toast-header button span {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=style.css.map */
